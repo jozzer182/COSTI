@@ -1,0 +1,19 @@
+import 'package:intl/intl.dart';
+
+String toMCOP(int precio, int number) {
+  if (number == 0) return '';
+  return NumberFormat.currency(
+    locale: "en_US",
+    symbol: "\$",
+    decimalDigits: 1,
+  ).format((precio * number) / 1000000);
+}
+
+String toMMCOP(int precio) {
+
+  return NumberFormat.currency(
+    locale: "en_US",
+    symbol: "\$",
+    decimalDigits: 1,
+  ).format((precio) / 1000000000);
+}
