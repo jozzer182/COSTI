@@ -239,10 +239,13 @@ Este proyecto es de uso propietario. Todos los derechos reservados.
 
 ---
 
-## 👨‍💻 Autor
+## 📬 Contacto
 
-**José Luis**
-- GitHub: [@jozzer182](https://github.com/jozzer182)
+**José Zarabanda**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zarabandajose/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jozzer182)
+[![Website](https://img.shields.io/badge/Website-FF7139?style=for-the-badge&logo=firefox&logoColor=white)](https://zarabanda-dev.web.app/)
 
 ---
 
