@@ -5,7 +5,7 @@
 <h1 align="center">COSTI</h1>
 
 <p align="center">
-  <strong>Sistema de Control de Costos de Proyectos</strong>
+  <strong>Project Cost Control System</strong>
 </p>
 
 <p align="center">
@@ -23,36 +23,36 @@
 
 ---
 
-## 📖 Descripción
+## 📖 Description
 
-**COSTI** es una aplicación empresarial desarrollada en Flutter para el control y gestión de costos de proyectos. Permite el seguimiento de presupuestos, proyecciones, costos reales y análisis financiero en tiempo real.
+**COSTI** is an enterprise application developed in Flutter for project cost control and management. It enables tracking of budgets, projections, actual costs, and real-time financial analysis.
 
-### 🎯 Módulos Principales
+### 🎯 Main Modules
 
-| Módulo | Descripción | Icono |
-|--------|-------------|-------|
-| **Live** | Seguimiento en tiempo real de costos | ![Live](images/live.png) |
-| **Proyección** | Proyecciones financieras y tendencias | ![Proyección](images/proyeccion.png) |
-| **Real** | Registro de costos reales ejecutados | ![Real](images/real.png) |
-| **Budget** | Gestión de presupuestos | ![Budget](images/budget.png) |
-| **HOVIP** | Módulo de gestión HOVIP | 📊 |
-| **FEM** | Gestión de Fichas de Ejecución de Mantenimiento | 📋 |
-
----
-
-## ✨ Características
-
-- 🔐 **Autenticación segura** con Firebase Auth
-- 📊 **Dashboards interactivos** con gráficos en tiempo real
-- 📈 **Análisis de tendencias** y proyecciones
-- 👥 **Gestión de usuarios** y perfiles de acceso
-- 📁 **Carga de archivos** a Google Drive
-- 🌐 **Aplicación Web** responsive
-- 🎨 **Tema oscuro/claro** personalizable
+| Module | Description | Icon |
+|--------|-------------|------|
+| **Live** | Real-time cost tracking | ![Live](images/live.png) |
+| **Projection** | Financial projections and trends | ![Projection](images/proyeccion.png) |
+| **Actual** | Actual executed costs recording | ![Actual](images/real.png) |
+| **Budget** | Budget management | ![Budget](images/budget.png) |
+| **HOVIP** | HOVIP management module | 📊 |
+| **FEM** | Maintenance Execution Sheets management | 📋 |
 
 ---
 
-## 🏗️ Arquitectura
+## ✨ Features
+
+- 🔐 **Secure authentication** with Firebase Auth
+- 📊 **Interactive dashboards** with real-time charts
+- 📈 **Trend analysis** and projections
+- 👥 **User management** and access profiles
+- 📁 **File upload** to Google Drive
+- 🌐 **Responsive Web Application**
+- 🎨 **Customizable dark/light theme**
+
+---
+
+## 🏗️ Architecture
 
 ```
 lib/
@@ -60,131 +60,131 @@ lib/
 │   ├── main_bloc.dart
 │   ├── main_event.dart
 │   └── main_state.dart
-├── home/                    # Página principal
-├── login/                   # Autenticación
+├── home/                    # Home page
+├── login/                   # Authentication
 │   ├── model/
 │   └── view/
-├── live/                    # Módulo Live
+├── live/                    # Live module
 │   ├── controller/
 │   ├── model/
 │   └── view/
-├── proyeccion/              # Módulo Proyección
+├── proyeccion/              # Projection module
 │   ├── controller/
 │   ├── model/
 │   └── view/
-├── real/                    # Módulo Real
+├── real/                    # Actual costs module
 │   ├── controller/
 │   ├── model/
 │   └── view/
-├── bdg/                     # Módulo Budget
-├── hovip_module/            # Módulo HOVIP
+├── bdg/                     # Budget module
+├── hovip_module/            # HOVIP module
 │   ├── ejecutores/
 │   ├── fem/
 │   ├── hovip/
 │   ├── proyectos/
 │   └── sustitutos/
-├── resources/               # Recursos compartidos
+├── resources/               # Shared resources
 │   ├── constants/
-│   └── env_config.dart      # Configuración de variables de entorno
-└── main.dart                # Punto de entrada
+│   └── env_config.dart      # Environment variables configuration
+└── main.dart                # Entry point
 ```
 
 ---
 
-## 🛠️ Stack Tecnológico
+## 🛠️ Tech Stack
 
-| Tecnología | Uso |
-|------------|-----|
-| **Flutter 3.x** | Framework UI multiplataforma |
-| **Dart** | Lenguaje de programación |
-| **Firebase Auth** | Autenticación de usuarios |
+| Technology | Usage |
+|------------|-------|
+| **Flutter 3.x** | Multi-platform UI framework |
+| **Dart** | Programming language |
+| **Firebase Auth** | User authentication |
 | **Google Apps Script** | Backend/APIs |
-| **flutter_bloc** | Gestión de estado |
-| **fl_chart** | Visualización de gráficos |
-| **flutter_dotenv** | Variables de entorno |
+| **flutter_bloc** | State management |
+| **fl_chart** | Chart visualization |
+| **flutter_dotenv** | Environment variables |
 
 ---
 
-## 🚀 Instalación
+## 🚀 Installation
 
-### Prerrequisitos
+### Prerequisites
 
-- Flutter SDK 3.x o superior
+- Flutter SDK 3.x or higher
 - Dart SDK >=2.19.2 <4.0.0
-- Cuenta de Firebase
-- Google Apps Script configurado
+- Firebase account
+- Google Apps Script configured
 
-### Pasos de instalación
+### Installation Steps
 
-1. **Clonar el repositorio**
+1. **Clone the repository**
    ```bash
    git clone https://github.com/jozzer182/COSTI.git
    cd COSTI
    ```
 
-2. **Instalar dependencias**
+2. **Install dependencies**
    ```bash
    flutter pub get
    ```
 
-3. **Configurar variables de entorno**
+3. **Configure environment variables**
    ```bash
-   # Copiar el archivo de ejemplo
+   # Copy the example file
    cp .env.example .env
    
-   # Editar .env con tus credenciales reales
-   # (Ver sección de Configuración abajo)
+   # Edit .env with your actual credentials
+   # (See Configuration section below)
    ```
 
-4. **Ejecutar la aplicación**
+4. **Run the application**
    ```bash
    flutter run -d chrome
    ```
 
 ---
 
-## ⚙️ Configuración
+## ⚙️ Configuration
 
-### Variables de Entorno
+### Environment Variables
 
-Copia `.env.example` a `.env` y configura las siguientes variables:
+Copy `.env.example` to `.env` and configure the following variables:
 
 ```env
 # Firebase Configuration
-FIREBASE_API_KEY=tu_api_key
-FIREBASE_APP_ID=tu_app_id
-FIREBASE_MESSAGING_SENDER_ID=tu_sender_id
-FIREBASE_PROJECT_ID=tu_project_id
-FIREBASE_AUTH_DOMAIN=tu_project.firebaseapp.com
-FIREBASE_STORAGE_BUCKET=tu_project.appspot.com
-FIREBASE_MEASUREMENT_ID=tu_measurement_id
+FIREBASE_API_KEY=your_api_key
+FIREBASE_APP_ID=your_app_id
+FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+FIREBASE_PROJECT_ID=your_project_id
+FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+FIREBASE_MEASUREMENT_ID=your_measurement_id
 
 # Google Apps Script Endpoints
-API_COSTI=https://script.google.com/macros/s/TU_SCRIPT_ID/exec
-API_HOVIP=https://script.google.com/macros/s/TU_SCRIPT_ID/exec
-API_FEM=https://script.google.com/macros/s/TU_SCRIPT_ID/exec
-API_FILE_UPLOAD=https://script.google.com/macros/s/TU_SCRIPT_ID/exec
-API_USERS=https://script.google.com/macros/s/TU_SCRIPT_ID/exec
-API_PERFILES=https://script.google.com/macros/s/TU_SCRIPT_ID/exec
+API_COSTI=https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec
+API_HOVIP=https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec
+API_FEM=https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec
+API_FILE_UPLOAD=https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec
+API_USERS=https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec
+API_PERFILES=https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec
 ```
 
 ### Firebase Setup
 
-1. Crear proyecto en [Firebase Console](https://console.firebase.google.com/)
-2. Habilitar Authentication con Email/Password
-3. Copiar las credenciales de configuración web
-4. Agregarlas al archivo `.env`
+1. Create a project in [Firebase Console](https://console.firebase.google.com/)
+2. Enable Authentication with Email/Password
+3. Copy the web configuration credentials
+4. Add them to the `.env` file
 
 ### Google Apps Script
 
-Los endpoints de Google Apps Script deben desplegarse como Web Apps:
-1. Crear los scripts necesarios en Google Apps Script
-2. Desplegar como aplicación web
-3. Copiar las URLs al archivo `.env`
+Google Apps Script endpoints must be deployed as Web Apps:
+1. Create the necessary scripts in Google Apps Script
+2. Deploy as web application
+3. Copy the URLs to the `.env` file
 
 ---
 
-## 📸 Capturas
+## 📸 Screenshots
 
 <p align="center">
   <img src="images/CopyPasteFEM2.gif" alt="Demo FEM Module" width="600"/>
@@ -192,54 +192,54 @@ Los endpoints de Google Apps Script deben desplegarse como Web Apps:
 
 ---
 
-## 🔒 Seguridad
+## 🔒 Security
 
-Este proyecto utiliza variables de entorno para proteger credenciales sensibles:
+This project uses environment variables to protect sensitive credentials:
 
-- ❌ **NUNCA** commitear el archivo `.env`
-- ✅ Usar `.env.example` como plantilla
-- ✅ Las credenciales de Firebase están externalizadas
-- ✅ Los endpoints de API están protegidos
+- ❌ **NEVER** commit the `.env` file
+- ✅ Use `.env.example` as a template
+- ✅ Firebase credentials are externalized
+- ✅ API endpoints are protected
 
 ---
 
-## 📝 Scripts útiles
+## 📝 Useful Scripts
 
 ```bash
-# Ejecutar en modo debug (web)
+# Run in debug mode (web)
 flutter run -d chrome
 
-# Construir para producción
+# Build for production
 flutter build web
 
-# Analizar código
+# Analyze code
 flutter analyze
 
-# Formatear código
+# Format code
 dart format lib/
 ```
 
 ---
 
-## 🤝 Contribución
+## 🤝 Contributing
 
-Este es un proyecto privado/empresarial. Para contribuir:
+This is a private/enterprise project. To contribute:
 
-1. Solicitar acceso al equipo de desarrollo
-2. Crear una rama feature (`git checkout -b feature/nueva-funcionalidad`)
-3. Commit de cambios (`git commit -m 'Agregar nueva funcionalidad'`)
-4. Push a la rama (`git push origin feature/nueva-funcionalidad`)
-5. Crear Pull Request
-
----
-
-## 📄 Licencia
-
-Este proyecto es de uso propietario. Todos los derechos reservados.
+1. Request access from the development team
+2. Create a feature branch (`git checkout -b feature/new-feature`)
+3. Commit changes (`git commit -m 'Add new feature'`)
+4. Push to branch (`git push origin feature/new-feature`)
+5. Create Pull Request
 
 ---
 
-## 📬 Contacto
+## 📄 License
+
+This project is proprietary. All rights reserved.
+
+---
+
+## 📬 Contact
 
 **José Zarabanda**
 
@@ -250,5 +250,5 @@ Este proyecto es de uso propietario. Todos los derechos reservados.
 ---
 
 <p align="center">
-  Desarrollado con ❤️ usando Flutter
+  Developed with ❤️ using Flutter
 </p>
